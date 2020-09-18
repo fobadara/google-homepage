@@ -1,7 +1,11 @@
-
+/*
+This is a good reset, in fact, it's the base of almost all my projects, however, the problem is with the h-tags
+With this reset, all h-tags will get small, so you will need to set sizes separately, to avoid this, I make the following changes:
+*/
 
 html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+/* remove h-tags from here*/
+p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -19,6 +23,13 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+}
+/*then apply this styles*/
+h1, h2, h3, h4, h5, h6{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
